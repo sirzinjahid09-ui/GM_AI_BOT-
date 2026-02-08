@@ -1,0 +1,11 @@
+services:
+  - type: worker
+    name: gm-ai-bot
+    runtime: node
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
