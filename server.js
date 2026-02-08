@@ -9,7 +9,7 @@ const GEMINI = process.env.GEMINI_API_KEY;
 
 async function askGemini(parts) {
   const res = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI}`,
+    `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${GEMINI}`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
